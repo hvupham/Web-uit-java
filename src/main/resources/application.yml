@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: web-uit-java
+  datasource:
+    url: jdbc:mysql://localhost:3307/web-uit?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: Abc123456789@
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+api:
+  prefix:/api/v1
